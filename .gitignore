@@ -46,3 +46,6 @@ postcss.config.js
 # Hardhat files
 artifacts/
 cache/
+
+#env
+.env
