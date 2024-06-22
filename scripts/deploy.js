@@ -18,7 +18,7 @@ async function main() {
       JSON.stringify({ Staking: staking.address }, undefined, 2)
     );
   
-    const StakingArtifact = artifacts.readArtifactSync("Staking");
+    const StakingArtifact = await artifacts.readArtifact("Staking");
   
     fs.writeFileSync(
       contractsDir + '/Staking.json',
@@ -32,3 +32,4 @@ async function main() {
       console.error(error);
       process.exit(1);
     });
+  
