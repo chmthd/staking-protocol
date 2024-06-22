@@ -1,36 +1,48 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# dependencies
-/node_modules
-/.pnp
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+.pnp
 .pnp.js
-.yarn/install-state.gz
 
-# testing
-/coverage
+# Testing
+coverage/
 
-# next.js
-/.next/
-/out/
+# Next.js
+.next/
+out/
+build/
 
-# production
-/build
+# Production
+dist/
 
-# misc
+# Miscellaneous
 .DS_Store
 *.pem
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Ethers.js build artifacts
+artifacts/
+cache/
 
-# local env files
-.env*.local
+# Ignore generated contract files
+src/contracts/*.json
 
-# vercel
-.vercel
+# Tailwind CSS
+tailwind.config.js
+postcss.config.js
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Hardhat files
+artifacts/
+cache/
